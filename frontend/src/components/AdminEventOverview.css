@@ -1,0 +1,83 @@
+.admin-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7f5;
+  color: #2f4f4f;
+   text-align: center;
+  padding: 20px;
+}
+
+.admin-title {
+  font-size: 32px;
+  color: #2e8b57;
+  font-weight: 700;
+  border-bottom: 2px solid #c5d5c5;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+.no-events {
+  text-align: center;
+  font-size: 18px;
+  color: #6b6b6b;
+  margin-top: 40px;
+}
+
+.event-card {
+  background-color: #ffffff;
+  border: 1px solid #cce3cc;
+  border-left: 6px solid #2e8b57;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(46, 139, 87, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-title {
+  font-size: 24px;
+  color: #2e8b57;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.event-detail {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #3a3a3a;
+}
+
+.volunteer-list {
+  margin-top: 15px;
+  padding-left: 15px;
+  border-left: 2px solid #d2e5d2;
+}
+
+.volunteer-item {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.volunteer-name {
+  font-weight: 500;
+  color: #2e8b57;
+}
+
+.volunteer-email {
+  color: #666;
+  font-style: italic;
+}
+
+.error-message {
+  color: #b00020;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 50px;
+}

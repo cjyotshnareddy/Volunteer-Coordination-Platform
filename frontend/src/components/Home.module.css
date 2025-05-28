@@ -1,0 +1,232 @@
+/* Global Wrapper */
+.homeWrapper {
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;
+  background-color: #f4f9f4;
+  animation: fadeIn 1.5s ease;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: zoomFade 2s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(34, 49, 34, 0.5);
+  z-index: 1;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 700px;
+  padding: 2rem;
+  animation: slideUp 1.5s ease-in-out;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px #00000066;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #e2f0e9;
+}
+
+.cta {
+  background-color: #2e8b57;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cta:hover {
+  background-color: #1e5e3e;
+  transform: scale(1.05);
+}
+
+/* Stats Section */
+.stats {
+  padding: 4rem 2rem;
+  background-color: #eaf6ed;
+  text-align: center;
+  animation: fadeIn 2s ease;
+}
+
+.statCards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.statCards div {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.statCards div:hover {
+  transform: translateY(-5px);
+}
+
+.statCards h3 {
+  color: #2e8b57;
+  font-size: 2rem;
+}
+
+/* How It Works */
+.howItWorks {
+  padding: 4rem 2rem;
+  background-color: #f0f8f4;
+  text-align: center;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.steps div {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 250px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.steps span {
+  font-size: 2rem;
+  font-weight: bold;
+  background: #2e8b57;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Stories Section */
+.stories {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #dff5e3, #f4f9f4);
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+}
+
+.storyCards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.storyCards div {
+  background: #fff;
+  padding: 2rem;
+  border-left: 5px solid #2e8b57;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: slideInLeft 1s ease;
+}
+
+/* CTA Banner */
+.ctaBanner {
+  padding: 4rem 2rem;
+  background-color: #2e8b57;
+  color: white;
+  text-align: center;
+  animation: zoomFade 1.5s ease;
+}
+
+.ctaLarge {
+  background-color: #fff;
+  color: #2e8b57;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.ctaLarge:hover {
+  background-color: #cceedd;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-40px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomFade {
+  0% { transform: scale(0.95); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .statCards,
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroContent h1 {
+    font-size: 2.2rem;
+  }
+
+  .cta,
+  .ctaLarge {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+  }
+}

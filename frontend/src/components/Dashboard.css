@@ -1,0 +1,127 @@
+/* GLOBAL STYLES */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #f1f8e9, #e8f5e9);
+  color: #37474f;
+ 
+}
+
+/* MAIN DASHBOARD CONTAINER */
+.dashboard-container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffffee;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid #dcedc8;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+   text-align: center;
+  padding: 20px;
+}
+
+/* TITLE */
+.dashboard-container h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #558b2f;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.dashboard-container h2::after {
+  content: '🌿';
+  position: absolute;
+  right: -30px;
+  top: 5px;
+  font-size: 1.5rem;
+}
+
+/* USER INFO */
+.user-info {
+  background-color: #f9fbe7;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  border-left: 6px solid #aed581;
+  color: #33691e;
+  font-size: 1.05rem;
+}
+
+/* EVENT SECTION */
+.event-list {
+  list-style: none;
+  padding: 0;
+}
+
+.event-item {
+  background: #f1f8e9;
+  border-left: 5px solid #8bc34a;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(139, 195, 74, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.event-item:hover {
+  transform: scale(1.02);
+}
+
+.event-item h4 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  color: #558b2f;
+}
+
+.event-item p {
+  margin: 8px 0;
+  color: #5d4037;
+  font-size: 1rem;
+}
+
+/* SIGNUP BUTTON */
+.signup-button {
+  background-color: #aed581;
+  color: #2e7d32;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(139, 195, 74, 0.4);
+}
+
+.signup-button:hover {
+  background-color: #8bc34a;
+  transform: scale(1.05);
+}
+
+.signup-button:active {
+  transform: scale(0.95);
+}
+
+/* EMPTY STATE */
+.no-events {
+  text-align: center;
+  background-color: #fff3e0;
+  padding: 15px;
+  border-radius: 10px;
+  color: #ff6f00;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+/* LOADING */
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #789262;
+}

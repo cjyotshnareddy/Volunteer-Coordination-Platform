@@ -1,0 +1,109 @@
+.add-event-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background-color: #F5F5DC;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(46, 139, 87, 0.2);
+  font-family: 'Poppins', sans-serif;
+  color: #2E8B57;
+  box-sizing: border-box;
+}
+
+.add-event-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #2E8B57;
+}
+
+.event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.event-form input,
+.event-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #C7E8CA;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 16px;
+  transition: border 0.3s ease;
+  box-sizing: border-box;
+}
+
+.event-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.event-form input:focus,
+.event-form textarea:focus {
+  border-color: #2E8B57;
+  outline: none;
+}
+
+.event-form button {
+  background-color: #2E8B57;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.event-form button:hover {
+  background-color: #246b45;
+}
+
+.success,
+.error {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.success {
+  color: #228B22;
+  background-color: #e8f5e9;
+  border-left: 5px solid #2E8B57;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.error {
+  color: #b22222;
+  background-color: #fdecea;
+  border-left: 5px solid #b22222;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.access-denied {
+  color: red;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 80px;
+}
+
+@media (max-width: 640px) {
+  .add-event-container {
+    margin: 30px 20px;
+    padding: 25px;
+  }
+
+  .add-event-container h2 {
+    font-size: 24px;
+  }
+
+  .event-form button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}

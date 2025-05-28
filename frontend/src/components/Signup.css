@@ -1,0 +1,93 @@
+/* Signup.css */
+
+.signup-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 12px;
+  background-color: #e6f2e6; /* soft greenish background */
+  box-shadow: 0 8px 20px rgba(46, 139, 87, 0.3); /* green shadow */
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  animation: fadeInScale 0.8s ease forwards;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.signup-title {
+  color: #2e8b57; /* forest green */
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signup-input,
+.signup-select {
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #9ccc9c;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.signup-input:focus,
+.signup-select:focus {
+  border-color: #2e8b57;
+}
+
+.signup-button {
+  padding: 12px;
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #246b45;
+}
+
+.error-message {
+  color: #b00020;
+  font-weight: 600;
+  margin-bottom: 15px;
+  animation: shake 0.3s;
+}
+
+.success-message {
+  color: #2e8b57;
+  font-weight: 600;
+  margin-bottom: 15px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-8px); }
+  40%, 80% { transform: translateX(8px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}

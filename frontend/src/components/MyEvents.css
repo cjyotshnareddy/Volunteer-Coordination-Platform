@@ -1,0 +1,59 @@
+/* MyEvents.css */
+.my-events-container {
+  max-width: 850px;
+  margin: 60px auto;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7f5;
+  color: #2f4f4f;
+   text-align: center;
+  padding: 20px;
+}
+
+.my-events-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2e8b57;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #b5d6b2;
+  padding-bottom: 10px;
+}
+
+.my-events-list {
+  list-style: none;
+  padding: 0;
+}
+
+.my-event-card {
+  background-color: #ffffff;
+  border: 1px solid #dceedd;
+  border-left: 6px solid #2e8b57;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(46, 139, 87, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.my-event-card:hover {
+  transform: translateY(-5px);
+}
+
+.my-event-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e8b57;
+  margin-bottom: 8px;
+}
+
+.my-event-description {
+  font-size: 16px;
+  color: #3e3e3e;
+}
+
+.no-events-message {
+  font-size: 18px;
+  color: #777;
+  text-align: center;
+  margin-top: 40px;
+}
